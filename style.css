@@ -43,6 +43,10 @@ body {
   cursor: pointer;
 }
 
+.input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .btn {
   background-color: transparent;
   border: none;
