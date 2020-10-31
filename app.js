@@ -37,6 +37,5 @@ function getResult() {
       weatherInfo.innerText = data.weather[0].main
       sunrise.innerText = `Sunrise: ${(new Date((data.sys.sunrise + data.timezone) * 1000)).toUTCString().match(/(\d\d:\d\d:\d\d)/)[0]}`
       sunset.innerText = `Sunset: ${(new Date((data.sys.sunset + data.timezone) * 1000)).toUTCString().match(/(\d\d:\d\d:\d\d)/)[0]}`
-      console.log(data)
     })
 }
